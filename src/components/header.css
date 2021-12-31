@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@100&display=swap');
+
+body {
+    margin: 0;
+    padding : 0;
+    background: none;
+}
+.header {
+    background-image: url('/src/components/desktop/hero.jpg');
+    background-position: center 40%;
+    padding: 4% 7%;
+    width: initial;
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    min-height: 30rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    width: 160px;
+    height: 26.66px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.topnav a.active {
+    background-color: transparent;
+    color: red;
+    float: left;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.bars {
+    height: 1rem;
+    width: 1.5rem;
+}
+
+.cancel {
+    height: 1rem;
+    width: 1rem;
+}
+/* Navbar Animation */
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 5px 10px;
+    position: relative;
+}
+
+ /* a:not(:first-child) */  a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.7s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+
+/* animation ends */
+
+.header-text {
+    padding: 0 5%;
+    max-width: 50%;
+    min-width: unset;
+    margin-top: 5.3rem;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    border: 2px solid white;
+}
+
+.hero-text {
+    display: block;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bolder;
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: initial;
+        background: transparent;
+    }
+    .hero-text {
+        display: block;
+        font-size: 3rem;
+        text-transform: uppercase;
+        text-align: left;
+        font-weight: bolder;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    
+    .topnav.responsive {
+        position: relative;
+        background: black;
+        padding: 10rem 0rem;
+    }
+    
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: initial;
+        text-align: center;
+        color: white;
+    }
+}
+@media (min-width:50px) and (max-width:767px) {
+    .header-text {
+        padding: 0 5%;
+        max-width: 100%;
+        min-width: unset;
+        margin-top: 5.3rem;
+        align-self: flex-start;
+        border: 2px solid white;
+    }
+}
