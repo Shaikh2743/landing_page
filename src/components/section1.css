@@ -26,7 +26,7 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('src/components/desktop/interactive.jpg');
+    background-image: url('./desktop/interactive.jpg');
 }
 @media (min-width: 64rem){
     .section_image {
