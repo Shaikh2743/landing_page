@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './creation.css';
-import Earth from './desktop/deep-earth.jpg';
+
 export default class creation extends Component {
     render() {
         return (
@@ -51,7 +51,7 @@ export default class creation extends Component {
                         </h3>
                     </div>
                 </div>
-                <div className="btn1">
+                <div className="btn1" >
                     <button className="button1">see all</button>    
                     </div>
             </div>

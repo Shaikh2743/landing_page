@@ -72,7 +72,7 @@ a {
     position: relative;
 }
 
- /* a:not(:first-child) */  a:after {
+ /* a:not(:first-child) */  .animie:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -85,7 +85,7 @@ a {
     width: 0;
 }
 
-a:hover:after {
+.animie:hover:after {
     width: 100%;
     left: 0;
 }
@@ -137,6 +137,7 @@ a:hover:after {
         position: relative;
         background: black;
         padding: 10rem 0rem;
+        flex-direction: row;
     }
     
     .topnav.responsive .icon {

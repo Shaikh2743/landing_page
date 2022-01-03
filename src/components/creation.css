@@ -83,9 +83,12 @@ button::before, .button1::before {
 .fish{
     background-image: url('./desktop/fisheye.jpg');
 }
+
 .creations__content__item:hover {
     transition: inherit;
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(10px);
+    filter: blur(4px);
+    transition: 0.5s ease;
 }
 
 
@@ -114,7 +117,7 @@ button::before, .button1::before {
     box-shadow: 0 0.3125rem 0.3125rem -0.0625rem rgb(0 0 0 / 60%);
 }
 .creations__content__item::before {
-    z-index: 1;
+    z-index: 0;
     content: '';
     top: 0rem;
     left: 0rem;
@@ -128,6 +131,7 @@ button::before, .button1::before {
     transition: all .4s ease-in-out;
     background-color: rgba(255,255,255,0.1);
 }
+
 .creation-content-title {
     z-index: 2;
     color: #fff;
@@ -230,12 +234,11 @@ button::before, .button1::before {
     button {
         display: none;
     }
-    .button1{
+    .btn1{
         display: block;
-    }
-    .button1{
         margin-top: 3rem;
     }
+    
 
     .creation-content {
         width: 100%;
@@ -266,5 +269,6 @@ button::before, .button1::before {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+        margin-bottom: 3rem;
     }
 }
