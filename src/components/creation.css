@@ -24,6 +24,7 @@
     display: none;
 }
 button, .button1 {
+    margin-bottom: 1rem;
     font-family: 'Alata', sans-serif;
     text-transform: uppercase;
     cursor: pointer;

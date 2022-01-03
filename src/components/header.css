@@ -35,8 +35,8 @@ body {
 .logo {
     width: 160px;
     height: 26.66px;
-    padding-bottom: 34vh;
-    padding-top: 3%;
+    padding-bottom: 16vh;
+    padding-top: 5%;
 }
 
 /* Nav bar CSS*/
@@ -69,8 +69,8 @@ body {
 }
 
 .bars {
-    height: 1rem;
-    width: 1.5rem;
+    height: 2rem;
+    width: 2rem;
 }
 
 .cancel {
@@ -145,18 +145,23 @@ a {
         background: black;
         flex-direction: row;
         height: -webkit-fill-available;
+        width: 101%;
+        margin-left: -4rem;
+        margin-top: -2rem;
     }
     
     .topnav.responsive .icon {
         position: absolute;
-        right: 0;
-        top: 0;
+        right: 7%;
+        top: 5%;
     }
     .topnav.responsive a {
         float: none;
         display: initial;
         text-align: center;
         color: white;
+        font-size: 1.1rem;
+        text-transform: uppercase;
     }
 }
 @media (min-width:50px) and (max-width:1024px) {
@@ -164,7 +169,7 @@ a {
         padding: 0 5%;
         max-width: 100%;
         min-width: unset;
-        margin-top: 5.3rem;
+        margin-top: 0.3rem;
         align-self: flex-start;
         border: 2px solid white;
     }
