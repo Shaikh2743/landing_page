@@ -6,6 +6,8 @@ body {
     padding : 0;
     background: none;
 }
+/* Header */
+
 .header {
     background-image: url('/src/components/desktop/hero.jpg');
     background-position: center 40%;
@@ -19,13 +21,25 @@ body {
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.4);
 }
+.header-text {
+    padding: 0 5%;
+    max-width: 50%;
+    min-width: unset;
+    margin-top: 5.3rem;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    border: 2px solid white;
+}
 
+/* Logo */
 .logo {
     width: 160px;
     height: 26.66px;
     padding-bottom: 34vh;
     padding-top: 3%;
 }
+
+/* Nav bar CSS*/
 
 .topnav {
     overflow: hidden;
@@ -48,6 +62,7 @@ body {
     color: red;
     float: left;
 }
+/* Icons used in Header */
 
 .topnav .icon {
     display: none;
@@ -62,7 +77,8 @@ body {
     height: 1rem;
     width: 1rem;
 }
-/* Navbar Animation */
+
+/* Navbar CSS Animation */
 
 a {
     color: #fff;
@@ -92,18 +108,7 @@ a {
     left: 0;
 }
 
-
-/* animation ends */
-
-.header-text {
-    padding: 0 5%;
-    max-width: 50%;
-    min-width: unset;
-    margin-top: 5.3rem;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
-    border: 2px solid white;
-}
+/*  Hero Text in Header */
 
 .hero-text {
     display: block;
@@ -113,7 +118,7 @@ a {
     font-weight: bolder;
     color: white;
 }
-
+/* Responsive Nav bar */
 @media screen and (max-width: 1024px) {
     .topnav a:not(:first-child) {
         display: none;
@@ -132,7 +137,7 @@ a {
         color: white;
     }
 }
-
+/* Reponsive nav bar  */
 @media screen and (max-width: 1024px) {
     
     .topnav.responsive {

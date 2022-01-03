@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@100&display=swap');
+
+/* main conatiner */
 .creation{
     margin: 5%;
 }
-
+/* conatiner's header section */
 .creations__header {
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
+/* content title */
 .creations__title {
     font-weight: 700;
     text-transform: uppercase;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2.1rem;
 }
+/* Button */
 .button1{
     display: none;
 }
@@ -30,6 +34,7 @@ button, .button1 {
     background-color: transparent;
     transition: all .4s ease-in-out;
     height: 100%;
+    margin-top: 3rem;
 }
 button:hover, .button1:hover {
     color: #fff;
@@ -57,7 +62,7 @@ button::before, .button1::before {
     transition: all .5s ease-in-out;
 }
 
-
+/* flex items background images */
 
 .earth{
     background-image: url('./desktop/deep-earth.jpg');
@@ -83,14 +88,7 @@ button::before, .button1::before {
 .fish{
     background-image: url('./desktop/fisheye.jpg');
 }
-
-.creations__content__item:hover {
-    transition: inherit;
-    backdrop-filter: blur(10px);
-    filter: blur(4px);
-    transition: 0.5s ease;
-}
-
+/* Creation Container Items CSS*/
 
 
 .creation-content {
@@ -132,6 +130,16 @@ button::before, .button1::before {
     background-color: rgba(255,255,255,0.1);
 }
 
+/* Creation Conatainer items OnHover CSS  */
+.creations__content__item:hover {
+    transition: inherit;
+    backdrop-filter: blur(10px);
+    filter: blur(4px);
+    transition: 0.5s ease;
+}
+
+/* Creation Container Items Title Texts */
+
 .creation-content-title {
     z-index: 2;
     color: #fff;
@@ -148,26 +156,30 @@ button::before, .button1::before {
 }
 
 
-/*  grid items media query*/ 
+/*  grid items media query for tablet (mode / view) */ 
 
 
 @media (min-width:768px) and  (max-width:1024px) {
+    /* main responsive CSS */
     .creation {
         margin: 30% 10%;
         padding-left: 10%;
     }
+    /* conatainer header */
     .creations__header {
         margin-top: 13rem;
         display: block;
         text-align: center;
         justify-content: space-between;
     }
+    /* Button  */
     button {
         display: none;
     }
     .button1{
         display: block;
-    }    
+    }  
+    /*  Title */  
     .creations__title {
         font-weight: 700;
         text-transform: uppercase;
@@ -175,7 +187,8 @@ button::before, .button1::before {
         font-size: 2.1rem;
         text-align: left;
     }
-    
+    /* COntent */ 
+
     .creation-content {
         width: 100%;
         height: auto;
@@ -184,6 +197,7 @@ button::before, .button1::before {
         grid-gap: 0.875rem;
         align-items: center;
     }
+    /* Flex Items in container */
     .creations__content__item {
         width: 100%;
         height: 7.5rem;
@@ -199,38 +213,43 @@ button::before, .button1::before {
         -webkit-box-shadow: 0 0.3125rem 0.3125rem -0.0625rem rgb(0 0 0 / 60%);
         box-shadow: 0 0.3125rem 0.3125rem -0.0625rem rgb(0 0 0 / 60%);
     }
-    
+
+    /* content  */
     .creation-content  {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-    }
+    } 
+
+    /* for tab mode items styling design */
     .creations__content__item:nth-child(odd) {
         -ms-flex-item-align: start;
         align-self: flex-start;
     }
+
     .creations__content__item:not(:last-child) {
         margin-bottom: 1.25rem;
     }
-    
+
 }
 
-
+/*  grid items media query for mobile (mode / view) */ 
 
 @media (min-width:50px) and  (max-width:767px) {
-
+/*  main container */
     .creation {
         margin: 0;
         padding-left: 5%;
     }
-    
+   /* contaier header  */ 
     .creations__header {
         margin-top: 13rem;
         display: block;
         text-align: center;
         justify-content: space-between;
     }
+    /* Button */
     button {
         display: none;
     }
@@ -239,7 +258,7 @@ button::before, .button1::before {
         margin-top: 3rem;
     }
     
-
+/*  contaner content */
     .creation-content {
         width: 100%;
         height: auto;
@@ -248,6 +267,15 @@ button::before, .button1::before {
         grid-gap: 1.875rem;
         align-items: center;
     }
+    .creation-content  {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+
+    /* container item content */
     .creations__content__item {
         width: 100%;
         height: 7.5rem;
@@ -264,11 +292,5 @@ button::before, .button1::before {
         box-shadow: 0 0.3125rem 0.3125rem -0.0625rem rgb(0 0 0 / 60%);
     }
     
-    .creation-content  {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        margin-bottom: 3rem;
-    }
+    
 }
