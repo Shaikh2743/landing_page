@@ -23,6 +23,8 @@ body {
 .logo {
     width: 160px;
     height: 26.66px;
+    padding-bottom: 34vh;
+    padding-top: 3%;
 }
 
 .topnav {
@@ -72,7 +74,7 @@ a {
     position: relative;
 }
 
- /* a:not(:first-child) */  .animie:after {
+  .animie:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -112,7 +114,7 @@ a {
     color: white;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
     .topnav a:not(:first-child) {
         display: none;
     }
@@ -131,13 +133,13 @@ a {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
     
     .topnav.responsive {
-        position: relative;
+        position: absolute;
         background: black;
-        padding: 10rem 0rem;
         flex-direction: row;
+        height: -webkit-fill-available;
     }
     
     .topnav.responsive .icon {
@@ -152,7 +154,7 @@ a {
         color: white;
     }
 }
-@media (min-width:50px) and (max-width:767px) {
+@media (min-width:50px) and (max-width:1024px) {
     .header-text {
         padding: 0 5%;
         max-width: 100%;
@@ -160,5 +162,10 @@ a {
         margin-top: 5.3rem;
         align-self: flex-start;
         border: 2px solid white;
+    }
+    .nav_link{
+        vertical-align: middle;
+        text-align: center;
+        left: -6rem;
     }
 }

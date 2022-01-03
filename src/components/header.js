@@ -29,12 +29,11 @@ export default class header extends Component {
                         class="active" > < img className="logo"
                             src={Logo}
                         /></a >
-                    
-                    <a className="animie" href="#Support" > Support </a>
-                    <a className="animie" href="#Products" > Products </a>
-                    <a className="animie" href="#Events" > Events </a>
-                    <a className="animie" href="#Careeres" > Careers </a>
-                    <a className="animie" href="#about" > About </a>
+                    <a className="animie nav_link" href="#Support" > Support </a>
+                    <a className="animie nav_link" href="#Products" > Products </a>
+                    <a className="animie nav_link" href="#Events" > Events </a>
+                    <a className="animie nav_link" href="#Careeres" > Careers </a>
+                    <a className="animie nav_link" href="#about" > About </a>
                     <a className="animie" href="javascript:void(0);"
                         class="icon"
                         onClick={this.myFunction} >
