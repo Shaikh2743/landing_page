@@ -100,12 +100,12 @@
              width: 60%;
              display: none;
          }
-         @media (min-width: 64rem){
+         @media (min-width: 1024rem){
             .section_image {
                 min-height: 31.25rem;
             }
             }
-        @media (min-width: 48rem){
+        @media (min-width: 767rem){
             .section_image {
                 height: 17.5rem;
             }
