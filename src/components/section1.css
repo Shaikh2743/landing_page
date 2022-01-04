@@ -152,6 +152,10 @@
                 display: flex;
                 flex-direction: column;
             }
+            .sec-img{
+                width: 60%;
+                display: none;
+            }
         }
     
     @media (min-width:350px) and (max-width:767px) {
@@ -165,10 +169,30 @@
             background-color: #fff;
             display: flex;
             flex-direction: column;
-        }     
+        }   
+        .sec-img{
+            width: 60%;
+            display: none;
+        }  
     }
 
     @media (min-width:50px)  and (max-width:350px) {
+        .sec-img{
+            width: 60%;
+            display: none;
+        }
+        .section_image::after {
+            content: "";
+            top: 0rem;
+            left: -6rem;
+            width: 258%;
+            height: 100%;
+            position: absolute;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('./desktop/interactive.jpg');
+        }
         .feature__content__text {
             max-width: 35rem;
             color: #342f2f;
@@ -179,7 +203,7 @@
         }
         .feature__content {
             width: 90%;
-            right: 0rem;
+            right: -1rem;
             bottom: -200px;
             padding: 2rem;
             max-width: 34.5rem;
