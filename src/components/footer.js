@@ -10,7 +10,7 @@ import Logo from './logo.svg';
 export default class footer extends Component {
     render() {
         return (
-            <div className="footer">
+            <footer >
                 <div className="footer-content">
                     <div className="footer-contaner">
                         < img className="foot_logo"
@@ -25,7 +25,7 @@ export default class footer extends Component {
                                 </li>
                                 <li class="links__item">
                                     <a href="#">Events</a>
-                                </li>
+                                </li>  
                                 <li class="links__item">
                                     <a href="#">Products</a>
                                 </li>
@@ -58,7 +58,7 @@ export default class footer extends Component {
                         </p>
                     </div>
                 </div>
-            </div>
+            </footer>
         )
     }
 }

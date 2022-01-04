@@ -8,7 +8,7 @@ body {
 }
 /* Header */
 
-.header {
+header {
     background-image: url('/src/components/desktop/hero.jpg');
     background-position: center 40%;
     padding: 4% 7%;

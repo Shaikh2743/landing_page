@@ -1,4 +1,4 @@
-.footer{
+footer{
     background: black;
 }
 .footer-content{
@@ -45,12 +45,12 @@
     margin-top: 1.875rem;   
     margin-right: 7rem;
 }
-.footer {
+footer {
     padding: 3.75rem 2rem;
     /* max-width: 69.6875rem; */
 }
 @media (min-width:50px) and (max-width:1024px) {
-    .footer{
+    footer{
         background: black;
         text-align: center;
     }

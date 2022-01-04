@@ -22,7 +22,7 @@ export default class header extends Component {
     render() {
         return (
 
-            <div className="header" >
+            <header >
                 <div class="topnav"
                     id="myTopnav" >
                     <a href="#home"
@@ -46,7 +46,7 @@ export default class header extends Component {
                             Immersive experiences that deliver </h1>
                     </div>
                 </div>
-            </div>
+            </header>
         )
     }
 }
