@@ -13,7 +13,7 @@ export default class footer extends Component {
             <footer >
                 <div className="footer-content">
                     <div className="footer-contaner">
-                        < img className="foot_logo"
+                        <img alt="footer-logo" className="foot_logo"
                             src={Logo} />
                         <div className="links">
                             <ul class="links__box">
@@ -25,7 +25,7 @@ export default class footer extends Component {
                                 </li>
                                 <li class="links__item">
                                     <a href="#">Events</a>
-                                </li>  
+                                </li>
                                 <li class="links__item">
                                     <a href="#">Products</a>
                                 </li>

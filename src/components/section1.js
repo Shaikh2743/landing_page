@@ -8,7 +8,7 @@ export default class section1 extends Component {
             <div className="section">
                 <div className="section_container">
                     <div className="section_image">
-                        <img className="sec-img" alt='interactive-image' src={Interact} />
+                        <img className="sec-img" alt='interactive' src={Interact} />
                     </div>
                     <div className="feature__content">
                         <h2 class="feature__content__title">

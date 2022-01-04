@@ -145,9 +145,10 @@ a {
         background: black;
         flex-direction: row;
         height: -webkit-fill-available;
-        width: 101%;
+        width: 100%;
         margin-left: -4rem;
-        margin-top: -2rem;
+        margin-top: -3rem;
+        padding-right: 3rem;
     }
     
     .topnav.responsive .icon {
@@ -177,5 +178,78 @@ a {
         vertical-align: middle;
         text-align: center;
         left: -6rem;
+    }
+}
+@media (min-width:50px) and (max-width:767px) {
+    .topnav.responsive {
+        position: absolute;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        height: -webkit-fill-available;
+        width: 100%;
+        margin-left: -3rem;
+        margin-top: -3rem;
+        padding-right: 3rem;
+    }
+    .logo {
+        width: 160px;
+        height: 26.66px;
+        padding-bottom: 9vh;
+        padding-top: 6%;
+        margin-left: 0rem;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: initial;
+        text-align: center;
+        color: white;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+    }
+}
+@media (min-width:350px) and (max-width:1024px) {
+    .header-text {
+        padding: 0 5%;
+        max-width: 100%;
+        min-width: unset;
+        margin-top: 0.3rem;
+        align-self: flex-start;
+        border: 2px solid white;
+    }
+    .nav_link{
+        vertical-align: middle;
+        text-align: center;
+        left: -6rem;
+    }
+}
+@media (min-width:50px) and (max-width:350px) {
+    
+    .topnav.responsive {
+        position: absolute;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        height: -webkit-fill-available;
+        width: 100%;
+        margin-left: -2rem;
+        margin-top: -3rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .logo {
+        width: 160px;
+        height: 26.66px;
+        padding-bottom: 4vh;
+        padding-top: 12%;
+        margin-left: -8rem;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: initial;
+        text-align: center;
+        color: white;
+        font-size: 1.1rem;
+        text-transform: uppercase;
     }
 }

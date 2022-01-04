@@ -71,7 +71,7 @@
         font-family: 'Josefin Sans', sans-serif;
         word-spacing: 0.25rem;
     }
-    @media (min-width: 50px) and (max-width:1024px) {
+    @media (min-width: 350px) and (max-width:1024px) {
         
         .section_container {
             position: relative;
@@ -100,16 +100,17 @@
              width: 60%;
              display: none;
          }
+        }
          @media (min-width: 1024rem){
             .section_image {
                 min-height: 31.25rem;
             }
             }
-        @media (min-width: 767rem){
+        @media (min-width: 350px){
             .section_image {
                 height: 17.5rem;
             }
-            }
+        }
             .feature__content {
                 width: 100%;
                 right: 5rem;
@@ -139,11 +140,46 @@
             margin-left: -1rem;
             word-spacing: 0.25rem;
         } 
-    }
-    @media (min-width:50px) and (max-width:767px) {
+        @media (min-width:767px) and (max-width:1024px) {
+            .feature__content {
+                width: 100%;
+                right: 5rem;
+                bottom: -200px;
+                padding: 3rem;
+                max-width: 34.5rem;
+                position: absolute;
+                background-color: #fff;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    
+    @media (min-width:350px) and (max-width:767px) {
         .feature__content {
-            width: 100%;
+            width: 90%;
             right: 4rem;
+            bottom: -200px;
+            padding: 3rem;
+            max-width: 34.5rem;
+            position: absolute;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+        }     
+    }
+
+    @media (min-width:50px)  and (max-width:350px) {
+        .feature__content__text {
+            max-width: 35rem;
+            color: #342f2f;
+            font-size: 0.9rem;
+            text-align: center;
+            font-weight: bolder;
+            word-spacing: 0.25rem;
+        }
+        .feature__content {
+            width: 90%;
+            right: 0rem;
             bottom: -200px;
             padding: 2rem;
             max-width: 34.5rem;
