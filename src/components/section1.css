@@ -143,14 +143,15 @@
         @media (min-width:767px) and (max-width:1024px) {
             .feature__content {
                 width: 100%;
-                right: 5rem;
-                bottom: -200px;
+                right: 9rem;
+                bottom: -230px;
                 padding: 3rem;
                 max-width: 34.5rem;
                 position: absolute;
                 background-color: #fff;
                 display: flex;
                 flex-direction: column;
+                z-index: 2;
             }
             .sec-img{
                 width: 60%;
