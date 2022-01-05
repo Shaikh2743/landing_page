@@ -114,7 +114,7 @@
             .feature__content {
                 width: 100%;
                 right: 5rem;
-                bottom: -200px;
+                bottom: 3rem;
                 padding: 2rem;
                 max-width: 34.5rem;
                 position: absolute;
@@ -213,3 +213,4 @@
             flex-direction: column;
         }
     }
+
